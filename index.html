@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Saeed — WordPress Developer | Frontend & Plugin Developer | Elementor | ShopEngine | WooCommerce. Building dynamic, high-performance websites and e-commerce platforms." />
+  <title>Muhammad Saeed | WordPress & Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-ring"></div>
+    <span class="preloader-text">MS</span>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ============ 3D BACKGROUND CANVAS ============ -->
+  <canvas id="bg3d"></canvas>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>MS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-greeting">Hi, my name is</p>
+          <h1 class="hero-name">Muhammad <span class="gradient-text">Saeed</span></h1>
+          <h2 class="hero-role">
+            I build <span class="typed-wrapper"><span id="typed"></span><span class="caret">|</span></span>
+          </h2>
+          <p class="hero-desc">
+            Results-driven WordPress Developer crafting dynamic, responsive, and
+            high-performance websites — from e-commerce and multi-vendor platforms
+            to real estate and real-time content systems.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">WordPress</span>
+            <span class="badge">Elementor</span>
+            <span class="badge">WooCommerce</span>
+            <span class="badge">PHP</span>
+            <span class="badge">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- 3D Floating Avatar Cube -->
+        <div class="hero-visual reveal" data-delay="200">
+          <div class="scene">
+            <div class="cube" id="cube">
+              <div class="cube-face front"><span>MS</span></div>
+              <div class="cube-face back"><span>WP</span></div>
+              <div class="cube-face right"><span>&lt;/&gt;</span></div>
+              <div class="cube-face left"><span>★</span></div>
+              <div class="cube-face top"><span>DEV</span></div>
+              <div class="cube-face bottom"><span>★</span></div>
+            </div>
+          </div>
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring ring-2"></div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// 01. About Me</span>
+          <h2 class="section-title">Passionate about <span class="gradient-text">clean code</span> &amp; great UX</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a WordPress Developer with hands-on experience building dynamic,
+              responsive, and high-performance websites. I specialize in E-commerce,
+              Real Estate, Blogging, and Service-based platforms using
+              <strong>Elementor, WooCommerce, and custom plugins</strong>.
+            </p>
+            <p>
+              I have a strong command of frontend design, user-experience
+              optimization, and advanced functionality through theme and plugin
+              customization — including multi-vendor systems, real-time content
+              platforms, and custom API integrations.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-card tilt">
+                <span class="highlight-icon">🚀</span>
+                <h4>15+ Projects</h4>
+                <p>Full-scale WordPress projects delivered for local &amp; international clients.</p>
+              </div>
+              <div class="highlight-card tilt">
+                <span class="highlight-icon">🧩</span>
+                <h4>Custom Plugins</h4>
+                <p>Multiple plugins built for WooCommerce &amp; Elementor extensions.</p>
+              </div>
+              <div class="highlight-card tilt">
+                <span class="highlight-icon">⚡</span>
+                <h4>Optimized</h4>
+                <p>Performance, SEO, and responsive design baked into every build.</p>
+              </div>
+              <div class="highlight-card tilt">
+                <span class="highlight-icon">🎯</span>
+                <h4>UI/UX Focused</h4>
+                <p>Business-oriented development with strong design sensibility.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-side reveal" data-delay="150">
+            <div class="terminal tilt">
+              <div class="terminal-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">muhammad-saeed — bash</span>
+              </div>
+              <pre class="terminal-body"><code><span class="t-comment"># Who am I?</span>
+<span class="t-key">name</span>: <span class="t-str">"Muhammad Saeed"</span>
+<span class="t-key">role</span>: <span class="t-str">"WordPress Developer"</span>
+<span class="t-key">stack</span>: [
+  <span class="t-str">"WordPress"</span>,
+  <span class="t-str">"PHP"</span>,
+  <span class="t-str">"Elementor"</span>,
+  <span class="t-str">"WooCommerce"</span>,
+  <span class="t-str">"JavaScript"</span>
+]
+<span class="t-key">education</span>: <span class="t-str">"BS Computer Science"</span>
+<span class="t-key">status</span>: <span class="t-ok">● available for work</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// 02. Technical Skills</span>
+          <h2 class="section-title">Technologies I <span class="gradient-text">work with</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card tilt reveal">
+            <div class="skill-icon">🗄️</div>
+            <h3>CMS</h3>
+            <p>WordPress — Custom Themes &amp; Plugins Development</p>
+          </div>
+          <div class="skill-card tilt reveal" data-delay="80">
+            <div class="skill-icon">🎨</div>
+            <h3>Page Builders</h3>
+            <p>Elementor, ShopEngine</p>
+          </div>
+          <div class="skill-card tilt reveal" data-delay="160">
+            <div class="skill-icon">🛒</div>
+            <h3>E-Commerce</h3>
+            <p>WooCommerce, Multi-Vendor Systems (Dokan, WC Marketplace)</p>
+          </div>
+          <div class="skill-card tilt reveal" data-delay="240">
+            <div class="skill-icon">🌐</div>
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
+          </div>
+          <div class="skill-card tilt reveal" data-delay="320">
+            <div class="skill-icon">⚙️</div>
+            <h3>Backend</h3>
+            <p>PHP (Core &amp; OOP), MySQL</p>
+          </div>
+          <div class="skill-card tilt reveal" data-delay="400">
+            <div class="skill-icon">🌿</div>
+            <h3>Version Control</h3>
+            <p>Git / GitHub</p>
+          </div>
+          <div class="skill-card tilt reveal" data-delay="480">
+            <div class="skill-icon">🛠️</div>
+            <h3>Tools</h3>
+            <p>cPanel, FileZilla, Security &amp; Performance Optimization</p>
+          </div>
+          <div class="skill-card tilt reveal" data-delay="560">
+            <div class="skill-icon">📈</div>
+            <h3>SEO &amp; Performance</h3>
+            <p>On-page SEO, caching, image &amp; database optimization</p>
+          </div>
+        </div>
+
+        <!-- Skill Bars -->
+        <div class="skill-bars reveal">
+          <div class="skill-bar" data-level="95">
+            <div class="skill-bar-head"><span>WordPress / PHP</span><span class="skill-pct">0%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-level="92">
+            <div class="skill-bar-head"><span>Elementor / ShopEngine</span><span class="skill-pct">0%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-level="90">
+            <div class="skill-bar-head"><span>WooCommerce / Multi-Vendor</span><span class="skill-pct">0%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-level="88">
+            <div class="skill-bar-head"><span>HTML / CSS / JavaScript</span><span class="skill-pct">0%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-level="85">
+            <div class="skill-bar-head"><span>MySQL / Performance Tuning</span><span class="skill-pct">0%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// 03. Experience</span>
+          <h2 class="section-title">Where I've <span class="gradient-text">worked</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card tilt">
+              <div class="timeline-meta">
+                <span class="timeline-company">CV Institute</span>
+                <span class="timeline-date">MM/YYYY — Present</span>
+              </div>
+              <h3 class="timeline-role">WordPress Developer</h3>
+              <ul class="timeline-list">
+                <li>Develop, customize, and maintain WordPress-based projects for institutional and client needs.</li>
+                <li>Create responsive and SEO-friendly interfaces using Elementor and custom CSS.</li>
+                <li>Build and integrate custom plugins to extend WordPress functionality.</li>
+                <li>Manage WooCommerce stores — product setup, order handling, and payment gateway configuration.</li>
+                <li>Collaborate with design and marketing teams to enhance site performance, security, and UX.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="120">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card tilt">
+              <div class="timeline-meta">
+                <span class="timeline-company">Freelance / Contract</span>
+                <span class="timeline-date">15+ Projects Delivered</span>
+              </div>
+              <h3 class="timeline-role">WordPress Developer — Local &amp; International Clients</h3>
+              <ul class="timeline-list">
+                <li>Delivered full-scale WordPress websites across e-commerce, real estate, news, and service niches.</li>
+                <li>Created custom plugins for WooCommerce and Elementor extensions.</li>
+                <li>Optimized websites for performance, SEO, and responsive design.</li>
+                <li>Applied strong UI/UX understanding to business-oriented web development.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education reveal">
+          <div class="edu-card tilt">
+            <span class="edu-icon">🎓</span>
+            <div>
+              <h4>Bachelor's in Computer Science</h4>
+              <p>Strong foundation in software engineering, web technologies, databases, and programming fundamentals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat reveal">
+            <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="stat reveal" data-delay="100">
+            <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+            <p>Custom Plugins Built</p>
+          </div>
+          <div class="stat reveal" data-delay="200">
+            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat reveal" data-delay="300">
+            <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+            <p>Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// 04. Key Projects</span>
+          <h2 class="section-title">Things I've <span class="gradient-text">built</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-3d">
+              <div class="project-inner">
+                <div class="project-front">
+                  <div class="project-thumb thumb-estate">
+                    <span class="project-emoji">🏗️</span>
+                  </div>
+                  <div class="project-body">
+                    <span class="project-type">Real Estate &amp; E-Commerce</span>
+                    <h3>Thaikedar</h3>
+                    <p>A hybrid real-estate &amp; e-commerce platform where businesses register, create online shops, and list products or properties — connecting factories directly to end users.</p>
+                    <div class="project-tags">
+                      <span>WordPress</span><span>WooCommerce</span><span>Dokan</span><span>Payment Gateways</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-back">
+                  <h4>Features Delivered</h4>
+                  <ul>
+                    <li>Vendor registration &amp; management system</li>
+                    <li>Real-time property listing &amp; shop creation</li>
+                    <li>Direct-to-customer sales integration</li>
+                    <li>Secure checkout &amp; multi-payment gateways</li>
+                    <li>Custom dashboards for business owners</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-delay="120">
+            <div class="project-3d">
+              <div class="project-inner">
+                <div class="project-front">
+                  <div class="project-thumb thumb-news">
+                    <span class="project-emoji">📰</span>
+                  </div>
+                  <div class="project-body">
+                    <span class="project-type">Service &amp; Real-Time News</span>
+                    <h3>TheRealEdits</h3>
+                    <p>A service-based company website focused on real-time news updates and live content delivery, engineered for speed under high traffic.</p>
+                    <div class="project-tags">
+                      <span>WordPress</span><span>Real-Time</span><span>SEO</span><span>Social Feeds</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-back">
+                  <h4>Features Delivered</h4>
+                  <ul>
+                    <li>Real-time content publishing system</li>
+                    <li>Category-wise news management</li>
+                    <li>Optimized for fast loading &amp; high traffic</li>
+                    <li>SEO-optimized structure</li>
+                    <li>Integrated social media feeds</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-delay="240">
+            <div class="project-3d">
+              <div class="project-inner">
+                <div class="project-front">
+                  <div class="project-thumb thumb-shop">
+                    <span class="project-emoji">🏬</span>
+                  </div>
+                  <div class="project-body">
+                    <span class="project-type">Multi-Vendor E-Commerce</span>
+                    <h3>E-Bazaar</h3>
+                    <p>A multi-vendor e-commerce platform where multiple sellers manage their own stores under one unified, scalable system.</p>
+                    <div class="project-tags">
+                      <span>WooCommerce</span><span>RBAC</span><span>Vendor Dashboard</span><span>Scalable</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-back">
+                  <h4>Features Delivered</h4>
+                  <ul>
+                    <li>Role-based access control (Admin, Vendor, Customer)</li>
+                    <li>Vendor dashboard: products, sales &amp; reports</li>
+                    <li>Secure checkout &amp; order tracking</li>
+                    <li>Scalable architecture for high performance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">// 05. Contact</span>
+          <h2 class="section-title">Let's build something <span class="gradient-text">together</span></h2>
+          <p class="section-sub">Have a project in mind? Fill in the form below and I'll get back to you within 24 hours.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder=" " required />
+                <label for="name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder=" " required />
+                <label for="email">Your Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+
+          <div class="contact-info reveal" data-delay="150">
+            <div class="info-card tilt">
+              <span class="info-icon">📧</span>
+              <div><h4>Email</h4><p>muhammadsaeed.dev@gmail.com</p></div>
+            </div>
+            <div class="info-card tilt">
+              <span class="info-icon">💼</span>
+              <div><h4>Role</h4><p>WordPress Developer @ CV Institute</p></div>
+            </div>
+            <div class="info-card tilt">
+              <span class="info-icon">🌍</span>
+              <div><h4>Availability</h4><p>Open for freelance &amp; remote work</p></div>
+            </div>
+            <div class="info-card tilt">
+              <span class="info-icon">⚡</span>
+              <div><h4>Response Time</h4><p>Within 24 hours</p></div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">GitHub</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+              <a href="https://www.upwork.com/" target="_blank" rel="noopener" class="social-link" aria-label="Upwork">Upwork</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>MS<span class="logo-bracket">/&gt;</span></a>
+      <p>Designed &amp; built by <strong>Muhammad Saeed</strong> — © <span id="year"></span>. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Three.js for 3D background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
